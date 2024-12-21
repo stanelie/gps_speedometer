@@ -1,5 +1,3 @@
-# ESP32-C3 Super Mini
-
 import time
 import board
 import busio
@@ -8,7 +6,7 @@ import adafruit_gps
 import digitalio
 import pwmio
 from adafruit_motor import servo
-# from adafruit_simplemath import map_range
+from adafruit_simplemath import map_range
 
 led = digitalio.DigitalInOut(board.LED)
 led.direction = digitalio.Direction.OUTPUT
@@ -72,7 +70,8 @@ while True:
 #            pixels.fill((0, 255, 0))
 #         print("Latitude: {0:.6f} degrees".format(gps.latitude))
 #         print("Longitude: {0:.6f} degrees".format(gps.longitude))
-            print("Speed: {} kmh".format(gps.speed_kmh))
+        print("Speed: {} kmh".format(gps.speed_kmh))
 #         print("GPS time: {}".format(_format_datetime(gps.timestamp_utc)))
 #         print("# satellites: {}".format(gps.satellites))
 
+        
